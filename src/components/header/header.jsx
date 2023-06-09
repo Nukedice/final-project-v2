@@ -2,14 +2,14 @@ import { useState } from 'react';
 import css from './header.module.css'
 import logo from '../UI/header-logo.png'
 import logo2 from './../UI/footer-logo.png'
-
+import { Link } from 'react-router-dom'
 const Header = () => {
     const [open, setOpen] = useState(false);
     const toggleMenu = () => {
         setOpen(!open);
     }
     const Button = (props) => {
-        return <button className={css.login_button}>Войти</button>}
+        return <button className={css.login_button}><Link to = {'/login'}> Войти </Link> </button>}
     const List = ({ open }) => {
         return (
             <><ul className={open ? css.show : css.hide}>
@@ -40,7 +40,7 @@ const Header = () => {
     }
 
     return <header className={open ? css.mobile_header : css.header}>
-        <img src={open? logo2 : logo} alt="logo" />
+        <Link to = {'/'} ><img src={open? logo2 : logo} alt="logo" /> </Link>
         <nav className={css.navigation}>
             <a href="#" className={css.nav_item}>Главная</a>
             <a href="#" className={css.nav_item}>Тарифы</a>

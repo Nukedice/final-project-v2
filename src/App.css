@@ -5,3 +5,7 @@
   text-decoration: none;
   border: none;
 }
+@font-face {
+  font-family: 'Ferry';
+  src: url(/src/components/UI/2717-font.otf);
+}

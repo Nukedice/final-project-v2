@@ -1,0 +1,31 @@
+import css from './auth_form.module.css'
+import lock from './/../UI/padlock.png'
+import google from './/../UI/google.png'
+import facebook from './/../UI/facebook.png'
+import yandex from './/../UI/yandex.png'
+import { useState } from 'react'
+const AuthForm = () => {
+    return (
+        <form className={css.account_form} onSubmit={(e) => e.preventDefault()}>
+            <img src={lock} className={css.lock} /> {// может правильно было сверстать через legend?
+             }
+            <div className={css.button_block}>
+                <button className={css.button + ' ' + css.active} >Войти</button>
+                <button className={css.button}>Зарегистрироваться</button>
+            </div>
+            <label for="login" className={css.labels}>Логин или номер телефона:</label>
+            <input id="login" type="text" name="login" className={css.inputs}></input> 
+            <label for="password" className={css.labels}>Пароль:</label> 
+            <input id="password" type='password' name="password" className={css.inputs}></input> 
+            <button className={css.submit}>Войти</button>
+            <a href="#" className={css.reset}>Восстановить пароль</a>
+            <p className={css.labels}>Войти через:</p>
+            <div className={css.socials}>
+                <a href="https://www.google.ru/" target='_blank'><img src={google} alt="" /> </a> 
+                <a href="https://www.facebook.com/" target='_blank'><img src={facebook} alt="Росфинмониторинг включил корпорацию Meta (признана в России экстремистской и запрещена) в перечень террористов и экстремистов." /> </a>
+                <a href="https://www.yandex.com/" target='_blank'><img src={yandex} alt="Найдётся всё!" /></a>
+            </div>
+        </form>
+    )
+}
+export default AuthForm;
