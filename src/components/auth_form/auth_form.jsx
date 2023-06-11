@@ -1,8 +1,8 @@
 import css from './auth_form.module.css'
-import lock from './/../UI/padlock.png'
-import google from './/../UI/google.png'
-import facebook from './/../UI/facebook.png'
-import yandex from './/../UI/yandex.png'
+import lock from './/../UI/login/padlock.png'
+import google from './/../UI/login/google.png'
+import facebook from './/../UI/login/facebook.png'
+import yandex from './/../UI/login/yandex.png'
 import { useState } from 'react'
 const AuthForm = () => {
     return (

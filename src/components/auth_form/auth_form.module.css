@@ -89,3 +89,28 @@
 .socials img {
     margin-right: 10px;
 }
+@media (max-width: 555px) {
+.account_form {
+    width: 335px;
+    margin-left: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.socials img {
+    margin-right: 2px;
+}
+}
+@media (max-width:455px) {
+    .account_form {
+        margin-left: -65px;
+    }
+    .lock {
+        margin-top: -100px;
+        margin-left: 71px;
+        
+    }
+    .button_block {
+        margin-top: 25px;
+    }
+}
