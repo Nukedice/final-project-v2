@@ -8,7 +8,42 @@ import Larry from "./../UI/main_imgs/Larry.png";
 import idea from "./../UI/main_imgs/idea.png";
 import hawkeye from "./../UI/main_imgs/hawkeye.png";
 import laptop from "./../UI/main_imgs/laptop.png";
+import { Link } from "react-router-dom";
+
 const Main = () => {
+  
+let slideItem = [
+  {
+    image: time,
+    description: "Высокая и оперативная скорость обработки заявки",
+    id: 1,
+    }
+  ,
+  {
+       image: quality,
+    description: "Огромная комплексная база данных, обеспечивающая объективный ответ на запрос",
+    id: 2,
+    } 
+     ,
+    {
+         image: protect,
+      description: "Защита конфеденциальных сведений, не подлежащих разглашению по федеральному законодательству",
+      id: 3,
+      }
+]
+
+const prevSlide = (i) =>{
+  console.log ('prev')
+  
+}
+const nextSlide = (n) =>{
+
+  console.log ('next')
+  }
+
+
+
+
   return (
     <div className={css.main}>
       <section className={css.about_us}>
@@ -18,33 +53,21 @@ const Main = () => {
             Комплексный анализ публикаций, получение данных в формате PDF на
             электронную почту.
           </p>
-          <button className={css.button}>Запросить данные</button>
+          <button className={css.button}> <Link to={'/search'}>Запросить данные</Link> </button>
         </div>
         <img src={Bobby} alt="ненужная картинка" />
       </section>
       <section className={css.whywe}>
         <h2>Почему именно мы</h2>
         <div className={css.slider_container}>
-          <img src={arrow} className={css.arrow} />
-          <div className={css.slider_item}>
-            <img src={time} alt="save time" />
-            <p>Высокая и оперативная скорость обработки заявки</p>
-          </div>
-          <div className={css.slider_item}>
-            <img src={quality} alt="huge base" />
-            <p>
-              Огромная комплексная база данных, обеспечивающая объективный ответ
-              на запрос
-            </p>
-          </div>
-          <div className={css.slider_item}>
-            <img src={protect} alt="safety" />
-            <p>
-              Защита конфеденциальных сведений, не подлежащих разглашению по
-              федеральному законодательству
-            </p>
-          </div>
-          <img src={arrow} className={css.arrow} />
+          <img src={arrow} className={css.arrow} onClick={prevSlide} />
+          {slideItem.map(slide =>
+           <div className={css.slider_item} key={slide.id}>
+            <img src={slide.image}/>
+            <p>{slide.description}</p>
+                    </div>)}
+          
+          <img src={arrow} className={css.arrow} onClick={nextSlide} />
         </div>
         <div className={css.larry}>
           <img src={Larry} alt="It's Larry" />

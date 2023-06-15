@@ -28,11 +28,6 @@
     margin-top: -15px;
 }
 
-.active {
-    color: #029491;
-    border-color: #029491;
-}
-
 .button_block {
     display: flex;
     justify-content: space-around;

@@ -13,7 +13,7 @@ const Header = () => {
     const List = ({ open }) => {
         return (
             <><ul className={open ? css.show : css.hide}>
-                <li><a href="#">Главная</a></li>
+                <li><Link to = {'/'}>Главная</Link></li>
                 <li><a href="#">Тарифы</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href='#' className={css.register}>Зарегистрироваться</a></li>
@@ -42,7 +42,7 @@ const Header = () => {
     return <header className={open ? css.mobile_header : css.header}>
         <Link to = {'/'} ><img src={open? logo2 : logo} alt="logo" /> </Link>
         <nav className={css.navigation}>
-            <a href="#" className={css.nav_item}>Главная</a>
+        <Link to = {'/'} className={css.nav_item}>Главная</Link>
             <a href="#" className={css.nav_item}>Тарифы</a>
             <a href="#" className={css.nav_item}>FAQ</a>
         </nav>
