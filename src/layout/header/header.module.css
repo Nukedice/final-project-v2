@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding: 0 60px;
     position: relative;
+
 }
 
 .navigation {
@@ -25,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .box {
@@ -40,7 +42,6 @@
     display: none;
     /*УДАЛИ МЕНЯ */
 }
-
 
 .box_item {
     font-weight: 400;
@@ -76,16 +77,6 @@
     margin: 0 20px;
 }
 
-.login_button {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    width: 65px;
-    height: 26px;
-    background: #7CE3E1;
-    border-radius: 5px;
-}
-
 .mobile_nav {
     display: none;
 }
@@ -105,44 +96,15 @@
 
     .mobile_nav {
         display: flex;
+        position: absolute;
+        top:34px;
+        right: 26px;
     }
 
     .mobile_nav button {
         display: flex;
         background-color: #fff;
     }
-
-    .login_button {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
-        width: 70%;
-        height: 52px;
-        background: #7CE3E1;
-        border-radius: 5px;
-    }
-}
-
-.menu {
-    display: flex;
-    position: absolute;
-    background-color: #fff;
-    width: 30px;
-    height: 30px;
-    top: 30px;
-    right: 30px;
-}
-
-.close {
-    display: none;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: #029491;
-}
-
-.hide {
-    display: none;
 }
 
 .mobile_header {
@@ -150,31 +112,7 @@
     padding: 0 60px;
 }
 
-.show {
-    list-style: none;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 60vh;
-    padding: 0;
-}
 
-.show a {
-    color: #fff;
-    flex-grow: 1;
-}
-
-.show li {
-    color: #fff;
-    flex-grow: 2;
-    width: 100%;
-    text-align: center;
-}
-
-.show li:nth-child(4n) {
-    flex-grow: 1;
-}
 
 @media (max-width: 430px) {
     .header {

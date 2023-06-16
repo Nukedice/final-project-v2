@@ -1,5 +1,5 @@
 import css from './footer.module.css'
-import logo from './../UI/footer-logo.png'
+import logo from './assets/footer-logo.png'
 const Footer = () => {
 return <footer className={css.footer}>
     <img src={logo} alt="logo" />
