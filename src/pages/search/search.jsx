@@ -1,14 +1,41 @@
 import css from "./search.module.css";
-import rocketman from "./../UI/search/rocketman.png";
-import document from "./../UI/search/Document.png";
-import folder from "./../UI/search/Folders.png";
-
+import rocketman from "./assets/rocketman.png";
+import document from "./assets/Document.png";
+import folder from "./assets/Folders.png";
+import Button from "../../ui/Button/Button";
+import Checkbox from "../../ui/checkbox/checkbox";
 const SearchPage = () => {
+ const params = [ 
+  {
+    text : 'Признак максимальной полноты',
+    id : 1
+  }, {
+    text : 'Упоминания в бизнес-контексте',
+    id : 2
+  }, {
+    text : 'Главная роль в публикации',
+    id : 3
+  }, {
+    text : 'Публикации только с риск-факторами',
+    id : 4
+  }, {
+    text : 'Включать технические новости рынков',
+    id : 5
+  }, {
+    text : 'Включать анонсы и календари',
+    id : 6
+  }, {
+    text : 'Включать сводки новостей',
+    id : 7
+  },  
+ ]
+
+
   return (
     <section className={css.search}>
-      <h1 className={css.header}>
+      <h2>
         Найдите необходимые <br /> данные в пару кликов.
-      </h1>
+      </h2>
       <p className={css.rules}>Задайте параметры поиска. </p>
       <p className={css.rules}>Чем больше заполните, тем точнее поиск</p>
       <form className={css.search_form}>
@@ -71,35 +98,8 @@ const SearchPage = () => {
           </div>
         </div>
         <div className={css.checkboxes}>
-      <div className={css.checkbox}>
-      <input type="checkbox" id="1" name="scales" />
-      <label for="1">Признак максимальной полноты</label>
-    </div>
-    <div className={css.checkbox}>
-      <input type="checkbox" id="2" name="scales" />
-      <label for="2">Упоминания в бизнес-контексте</label>
-    </div>
-    <div className={css.checkbox}>
-      <input type="checkbox" id="3" name="scales" />
-      <label for="3">Главная роль в публикации</label>
-    </div>
-    <div className={css.checkbox}>
-      <input type="checkbox" id="4" name="scales" />
-      <label for="4">Публикации только с риск-факторами</label>
-    </div>
-    <div className={css.checkbox}>
-      <input type="checkbox" id="5" name="scales" />
-      <label for="5">Включать технические новости рынков</label>
-    </div>
-    <div className={css.checkbox}>
-      <input type="checkbox" id="6" name="scales" />
-      <label for="6">Включать анонсы и календари</label>
-    </div>
-    <div className={css.checkbox}>
-      <input type="checkbox" id="7" name="scales" />
-      <label for="7">Включать сводки новостей</label>
-    </div>
-    <button className={css.search_button}>Поиск</button>
+{params.map ((i) => (<Checkbox text={i.text} id={i.id}></Checkbox>))}
+    <div className={css.search_button}><Button  text={'Поиск'}></Button></div>
     <span>* Обязательные к заполнению поля</span>
       </div>
       </form>

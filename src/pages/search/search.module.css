@@ -3,8 +3,15 @@
     position: relative;
 }
 
-.header {
+.search h2 {
     text-transform: uppercase;
+    font-family: 'Ferry';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    margin-bottom: 25px;
 }
 
 .rules {
@@ -17,10 +24,11 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    padding: 29px 5px 10px 44px;
+    padding: 29px 44px 10px;
     margin-top: 47px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .inputs {
@@ -67,58 +75,47 @@
     border-radius: 5px;
     text-align: center;
 }
-.checkbox {
-    margin-bottom: 20px;
-}
-.checkbox label{
+
+.checkbox label {
     margin-left: 20px;
     font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
 }
-.checkbox input {
-    width: 14px;
-    height: 14px;
-}
+
 .search_button {
     position: absolute;
-width: 305px;
-height: 59px;
-bottom: 59px;
-right: 39px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 27px;
-letter-spacing: 0.03em;
-color: #FFFFFF;
-background: #5970FF;
-border-radius: 5px;
-cursor: pointer;
+    width: 305px;
+    height: 59px;
+    bottom: 79px;
+    right: 39px;
 }
+
 .search_form span {
     position: absolute;
     bottom: 32px;
     right: 85px;
     font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-color: #949494;
+    font-size: 14px;
+    line-height: 17px;
+    color: #949494;
 }
+
 .folder {
     position: absolute;
- top: 243px;
- right: 105px;
+    top: 243px;
+    right: 105px;
 }
+
 .document {
     position: absolute;
     top: 225px;
     right: 411px;
 }
+
 .Ilon {
     position: absolute;
     top: 444px;

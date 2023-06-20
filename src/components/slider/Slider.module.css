@@ -2,7 +2,7 @@
 .slider_container {
     display: flex;
     justify-content: space-between;
-    margin: 70px 60px;
+    margin: 70px 0;
     align-items: center;
 }
 
@@ -22,17 +22,6 @@
     line-height: 22px;
     letter-spacing: 0.01em;
 }
-
-.arrow {
-    height: 39px;
-    width: 39px;
-    cursor: pointer;
-}
-
-.arrow:first-child {
-    transform: rotate(180deg);
-}
-
 @media (max-width:1460px) {
     .slider_item {
         width: 350px;

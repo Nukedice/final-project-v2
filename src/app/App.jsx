@@ -1,6 +1,4 @@
-
 import './global/global.module.css';
-
 import Layout from '../layout/Layout'
 function App() {
   return (
