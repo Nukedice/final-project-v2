@@ -1,9 +1,9 @@
 import css from "./LoginButton.module.css";
-import { Link } from "react-router-dom";
+import RouteLink from "../../../ui/RouteLink/RouteLink";
 const LoginButton = () => {
   return (
     <button className={css.login_button}>
-      <Link to={"/login"}> Войти </Link>{" "}
+      <RouteLink path="/login"> Войти </RouteLink>
     </button>
   );
 };

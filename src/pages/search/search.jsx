@@ -3,8 +3,8 @@ import rocketman from "./assets/rocketman.png";
 import document from "./assets/Document.png";
 import folder from "./assets/Folders.png";
 import Button from "../../ui/Button/Button";
-import Checkbox from "../../ui/checkbox/checkbox";
-const SearchPage = () => {
+import Checkbox from "../../ui/Checkbox/checkbox";
+const Search = () => {
  const params = [ 
   {
     text : 'Признак максимальной полноты',
@@ -112,4 +112,4 @@ const SearchPage = () => {
     </section>
   );
 };
-export default SearchPage;
+export default Search;

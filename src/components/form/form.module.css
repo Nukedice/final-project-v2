@@ -10,9 +10,8 @@
 .lock {
     margin-top: -55px;
     margin-left: -67px;
-    
-}
 
+}
 .button {
     font-family: 'Inter';
     font-style: normal;
@@ -39,27 +38,6 @@
     border-color: #14b9b7;
 }
 
-.labels {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.02em;
-    color: #949494;
-    margin-bottom: 15px;
-    display: block;
-    font-family: 'Inter'
-}
-
-.inputs {
-    height: 43px;
-    border: 1px solid #C7C7C7;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
 .reset {
     display: block;
     text-align: center;
@@ -67,31 +45,41 @@
     text-decoration-line: underline;
     color: #5970FF;
     margin-bottom: 30px;
+    margin-top: 15px;
 }
-.socials img {
-    margin-right: 10px;
-}
-@media (max-width: 555px) {
-.account_form {
-    width: 335px;
-    margin-left: -15px;
-    padding-left: 15px;
-    padding-right: 15px;
+
+.socials {
+    margin-top: 15px;
 }
 
 .socials img {
-    margin-right: 2px;
+    margin-right: 10px;
 }
+
+@media (max-width: 555px) {
+    .account_form {
+        width: 335px;
+        margin-left: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .socials img {
+        margin-right: 2px;
+    }
 }
+
 @media (max-width:455px) {
     .account_form {
         margin-left: -65px;
     }
+
     .lock {
         margin-top: -100px;
         margin-left: 71px;
-        
+
     }
+
     .button_block {
         margin-top: 25px;
     }

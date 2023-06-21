@@ -4,10 +4,11 @@ import idea from './ui/idea.png';
 import Larry from './ui/Larry.png';
 import hawkeye from './ui/hawkeye.png';
 import laptop from './ui/laptop.png';
-import { Link } from "react-router-dom";
-import Slider from "../../ui/Slider/Slider";
+import Slider from "../../components/Slider/Slider";
 import Button from "../../ui/Button/Button";
-import Card from "../../components/card/Card";
+import Card from "../../components/Card/Card";
+import { Link } from "react-router-dom";
+import { slideItem } from "./assets/sliderItem";
 const Main = () => {
   return (
     <div className={css.main}>
@@ -19,14 +20,14 @@ const Main = () => {
             электронную почту.
           </p>
           <div className={css.but_container}>
-          <Button text={'Запросить данные'}/> 
+          <Link to='search'> <Button text={'Запросить данные'}/> </Link>
           </div>
         </div>
         <img src={Bobby} alt="ненужная картинка" />
       </section>
       <section className={css.whywe}>
         <h2>Почему именно мы</h2>
-        <Slider />
+        <Slider children={slideItem}/>
         <div className={css.larry}>
           <img src={Larry} alt="It's Larry" />
         </div>

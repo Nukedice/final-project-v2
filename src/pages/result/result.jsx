@@ -1,7 +1,7 @@
 import css from "./result.module.css";
 import helen from "./assets/Helen.png";
-import Slider from "../../components/slider/Slider";
-import Document from "../../components/document/document";
+import Slider from "../../components/Slider/Slider";
+import Document from "../../components/Document/document";
 import Button from "../../ui/Button/Button";
 import larry from './assets/Helen.png'
 const Result = () => {

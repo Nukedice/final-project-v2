@@ -1,7 +1,7 @@
 import css from './login.module.css'
 import people from './assets/Characters.png'
-import Form from '../../components/form/form'
- const LoginPage = () => {
+import Form from '../../components/Form/form'
+ const Login = () => {
     return (
         <div className={css.loginPage}>
             <h1 className={css.header}>Для оформления подписки на тариф, необходимо авторизоваться.</h1>
@@ -10,4 +10,4 @@ import Form from '../../components/form/form'
         </div>
     )
 }
-export default LoginPage;
+export default Login;

@@ -1,13 +1,13 @@
 import css from './navigation.module.css'
 import LoginButton from '../LoginButton/LoginButton'
-import { Link } from 'react-router-dom'
+import RouteLink from '../../../ui/RouteLink/RouteLink'
 const Navigation = ({ open }) => {
     return (<nav>
         <ul className={open ? css.show : css.hide}>
-            <li><Link to = {'/'}>Главная</Link></li>
-            <li><a href="#">Тарифы</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href='#' className={css.register}>Зарегистрироваться</a></li>
+            <li><RouteLink path = '/'>Главная</RouteLink></li>
+            <li><RouteLink path='/pricing'>Тарифы</RouteLink></li>
+            <li><RouteLink path='/faq'>FAQ</RouteLink></li>
+            <li><RouteLink path='/register' className={css.register}>Зарегистрироваться</RouteLink></li>
             <li><LoginButton /></li>
         </ul>
         </nav>

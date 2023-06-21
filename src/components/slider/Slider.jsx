@@ -1,28 +1,7 @@
 import css from "./Slider.module.css";
-import time from "../../pages/main/ui/time.png";
-import quality from "../../pages/main/ui/quality.png";
-import protect from "../../pages/main/ui/protect.png";
-import Arrow from "../../ui/arrow/arrow";
-const Slider = () => {
-  const slideItem = [
-    {
-      image: time,
-      description: "Высокая и оперативная скорость обработки заявки",
-      id: 1,
-    },
-    {
-      image: quality,
-      description:
-        "Огромная комплексная база данных, обеспечивающая объективный ответ на запрос",
-      id: 2,
-    },
-    {
-      image: protect,
-      description:
-        "Защита конфеденциальных сведений, не подлежащих разглашению по федеральному законодательству",
-      id: 3,
-    },
-  ];
+import Arrow from "../../ui/Arrow/arrow";
+const Slider = ({children}) => {
+const slideItem = children
 
   const prevSlide = () => {
     console.log("prev");

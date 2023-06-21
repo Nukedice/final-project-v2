@@ -6,6 +6,7 @@
     height: 26px;
     background: #7CE3E1;
     border-radius: 5px;
+    color: #000;
 }
 @media (max-width: 760px) {
     .login_button {
